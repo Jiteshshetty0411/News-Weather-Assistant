@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notification API</title>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <h1>Notification API</h1>
+    <p id="output"></p>
+    <script>
+        //Notification objects have a close() method. SOME browser automatically close them.
+        //Notification Events - click, error, close, show
+        if( 'Notification' in window){
+            
+            if (Notification.permission === 'granted') {
+                doNotify();
+            }else{
+                //notification == denied
+                Notification.requestPermission()
+                    .then(function(result) {
+                        console.log(result);  //granted || denied
+                        if( Notification.permission == 'granted'){ 
+                            doNotify();
+                        }
+                    })
+                    .catch( (err) => {
+                        console.log(err);
+                    });
+            }
+        
+        }
+        
+        function doNotify(){
+            let title = "News Weather Assitant";
+            let t = Date.now() + 120000;    //2 mins in future
+            let notification = {
+                body: 'Hello from News Weather Assitant!',
+                icon: 'imagefile/notificationicon.jpg',
+                timestamp: t,
+                vibrate: [100, 200, 100]
+            }
+            notification.onclick = () => {
+                // window.open('http://127.0.0.1:5501/NewsAppJs/index.html')
+
+                window.location.href="https://www.google.com/"
+            }
+            let n = new Notification(title, notification);
+
+            n.addEventListener('show', function(ev){
+                console.log('SHOW', ev.currentTarget.data);
+            });
+            n.addEventListener('close', function(ev){
+               console.log('CLOSE', ev.currentTarget.body); 
+            });
+            setTimeout( n.close.bind(n), 3000); //close notification after 3 seconds
+        }
+        /*************
+        Note about actions param - used with webworkers/serviceworkers
+        actions: [
+           {action: 'mail', title: 'e-mail', icon: './img/envelope-closed-lg.png'},
+           {action: 'blastoff', title: 'Blastoff', icon: './img/rocket-lg.png'}]
+       *********************/
+    </script>
+</body>
+</html>

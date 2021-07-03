@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title> Welcome To News Weather Assistant</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NewsWeatherAssistant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Create free Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://localhost:8080/signup">Sign Up Now</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/login">Sign In</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link " href="http://localhost:8080/home/dashboard">Dashboard</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h3> Top News <span class="badge bg-dark">by News Weather Assistant</span> </h3>
+
+        <hr>
+
+    </div>
+
+    <ul class="nav nav-tabs navbar-expand-lg justify-content-center bg-outline-primary">
+        <li class="nav-item  text-dark">
+            <a class="nav-link active" aria-current="page" href="#">News</a>
+        </li>
+        <li class="nav-item text-dark">
+            <!-- Button trigger modal -->
+            <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="#">
+                Weather-Report
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Weather-Report</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            To access Weather-Report You need to Click on Dashboard 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a type="button" href="http://localhost:8080/home/dashboard" class="btn btn-primary">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="nav-item text-dark">
+            <!-- Button trigger modal -->
+            <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#">
+                Voice Assistant
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Voice Assistant</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            To access Voice Assistant You need to Click on Dashboard 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a type="button" href="http://localhost:8080/home/dashboard" class="btn btn-primary">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item text-dark">
+            <!-- Button trigger modal -->
+            <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="#">
+               Quotes
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> Quotes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            To access Quotes You need to Click on Dashboard 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a type="button" href="http://localhost:8080/home/dashboard" class="btn btn-primary">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- <div class="card card-body accordion" id="newsAccordion"> -->
+
+    <!---------------------------------------------- Countries ----------------------------------------------->
+    <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent1" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent1">
+        <div class="bg-dark p-4">
+            <h5 class="text-dark h4">Countries</h5>
+            <img src="imagefile/countries.jpg"></img> </img> <img src="imagefile/countries2.jpg"></img>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="background: url(./imagefile/newsworld1.jpg)">
+            <h1><a class="navbar-brand text-dark" href="#">Countries</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample1" aria-expanded="true"
+                                        aria-controls="multiCollapseExample1">India</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card-body accordion" id="newsAccordion1">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-danger collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="true"
+                                    aria-controls="multiCollapseExample2">United
+                                    States</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card-body accordion" id="newsAccordion2">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                    aria-controls="multiCollapseExample3">United
+                                    Kingdom</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <div class="card-body accordion" id="newsAccordion3">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample4" aria-expanded="false"
+                                    aria-controls="multiCollapseExample4">Australia</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                    <div class="card-body accordion" id="newsAccordion4">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample5" aria-expanded="false"
+                                    aria-controls="multiCollapseExample5">Russian
+                                    Federation</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample5">
+                                    <div class="card-body accordion" id="newsAccordion5">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-info collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample6" aria-expanded="false"
+                                    aria-controls="multiCollapseExample6">Japan</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample6">
+                                    <div class="card-body accordion" id="newsAccordion6">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-danger collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample7" aria-expanded="false"
+                                    aria-controls="multiCollapseExample7">Germany</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample7">
+                                    <div class="card-body accordion" id="newsAccordion7">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-light  collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample8" aria-expanded="false"
+                                    aria-controls="multiCollapseExample8">France</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample8">
+                                    <div class="card-body accordion" id="newsAccordion8">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample9" aria-expanded="false"
+                                    aria-controls="multiCollapseExample9">Brazil</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample9">
+                                    <div class="card-body accordion" id="newsAccordion9">
+                                    </div>
+                                </div>
+
+                                <button class="btn  btn-light  collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample10" aria-expanded="false"
+                                    aria-controls="multiCollapseExample10">Switzerland</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample10">
+                                    <div class="card-body accordion" id="newsAccordion10">
+                                    </div>
+                                </div>
+
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <------------------------------------------------ Languages ----------------------------------------------->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent2">
+        <div class="bg-light p-4">
+            <h5 class="text-dark h4">Languages</h5><br>
+            <img src="imagefile/languages.jpg"></img> <img src="imagefile/languages1.png"></img> <img
+                src="imagefile/languages3.jpg"></img> <img src="imagefile/languages4.png"></img>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid " style="background: url(./imagefile/languages5.jpg)">
+            <h1><a class="navbar-brand  " href="#">Languages</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <button class="btn btn-primary " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample11" aria-expanded="false"
+                                        aria-controls="multiCollapseExample11">India-English</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample11">
+                                    <div class="card-body accordion" id="newsAccordion11">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample12" aria-expanded="false"
+                                    aria-controls="multiCollapseExample12">India-Hindi</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample12">
+                                    <div class="card-body accordion" id="newsAccordion12">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample13" aria-expanded="false"
+                                    aria-controls="multiCollapseExample13">India-Marathi</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample13">
+                                    <div class="card-body accordion" id="newsAccordion13">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-danger collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample14" aria-expanded="false"
+                                    aria-controls="multiCollapseExample14">India-Tamil</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample14">
+                                    <div class="card-body accordion" id="newsAccordion14">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning text-dark collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#multiCollapseExample15"
+                                    aria-expanded="false" aria-controls="multiCollapseExample15">India-Telugu</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample15">
+                                    <div class="card-body accordion" id="newsAccordion15">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-info text-dark collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample16" aria-expanded="false"
+                                    aria-controls="multiCollapseExample16">India-Malayalam</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample16">
+                                    <div class="card-body accordion" id="newsAccordion16">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-light text-dark collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#multiCollapseExample17"
+                                    aria-expanded="false" aria-controls="multiCollapseExample17">United
+                                    States-English</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample17">
+                                    <div class="card-body accordion" id="newsAccordion17">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample18" aria-expanded="false"
+                                    aria-controls="multiCollapseExample18">United
+                                    Kingdom-English</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample18">
+                                    <div class="card-body accordion" id="newsAccordion18">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample19" aria-expanded="false"
+                                    aria-controls="multiCollapseExample19">Russian Federation-Russian</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample19">
+                                    <div class="card-body accordion" id="newsAccordion19">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample20" aria-expanded="false"
+                                    aria-controls="multiCollapseExample20">Germany-German</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample20">
+                                    <div class="card-body accordion" id="newsAccordion20">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample21" aria-expanded="false"
+                                    aria-controls="multiCollapseExample21">France-French</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample21">
+                                    <div class="card-body accordion" id="newsAccordion21">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-danger collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample22" aria-expanded="false"
+                                    aria-controls="multiCollapseExample22">Romania-Romanian</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample22">
+                                    <div class="card-body accordion" id="newsAccordion22">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning text-dark collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#multiCollapseExample23"
+                                    aria-expanded="false" aria-controls="multiCollapseExample23">Japan-Japanese</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample23">
+                                    <div class="card-body accordion" id="newsAccordion23">
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <------------------------------------ Topics ---------------------------------------------------->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Topics</h5>
+            <img src="imagefile/Topics.jpg"></img>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="background: url(./imagefile/Topics1.png)">
+            <h1><a class="navbar-brand" href="#">Topics</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample24" aria-expanded="false"
+                                        aria-controls="multiCollapseExample24">Breaking-news</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample24">
+                                    <div class="card-body accordion" id="newsAccordion24">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample25" aria-expanded="false"
+                                    aria-controls="multiCollapseExample25">World</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample25">
+                                    <div class="card-body accordion" id="newsAccordion25">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample26" aria-expanded="false"
+                                    aria-controls="multiCollapseExample26">Nation</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample26">
+                                    <div class="card-body accordion" id="newsAccordion26">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample27" aria-expanded="false"
+                                    aria-controls="multiCollapseExample27">Business</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample27">
+                                    <div class="card-body accordion" id="newsAccordion27">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample28" aria-expanded="false"
+                                    aria-controls="multiCollapseExample28">Technology</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample28">
+                                    <div class="card-body accordion" id="newsAccordion28">
+                                    </div>
+                                </div>
+
+
+                                <button class="btn btn-info" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample29" aria-expanded="false"
+                                    aria-controls="multiCollapseExample29">Entertainment</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample29">
+                                    <div class="card-body accordion" id="newsAccordion29">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample30" aria-expanded="false"
+                                    aria-controls="multiCollapseExample30">Sports</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample30">
+                                    <div class="card-body accordion" id="newsAccordion30">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample31" aria-expanded="false"
+                                    aria-controls="multiCollapseExample31">Science</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample31">
+                                    <div class="card-body accordion" id="newsAccordion31">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample32" aria-expanded="false"
+                                    aria-controls="multiCollapseExample32">Health</button>
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample32">
+                                    <div class="card-body accordion" id="newsAccordion32">
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- =============================================================================================================================== -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script src="index.js"></script>
+    <script>
+        //Notification objects have a close() method. SOME browser automatically close them.
+        //Notification Events - click, error, close, show
+        if ('Notification' in window) {
+
+            if (Notification.permission === 'granted') {
+                // If it's okay let's create a notification
+                doNotify();
+            } else {
+                //notification == denied
+                Notification.requestPermission()
+                    .then(function (result) {
+                        console.log(result);  //granted || denied
+                        if (Notification.permission == 'granted') {
+                            doNotify();
+                        }
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    });
+            }
+
+        }
+
+        function doNotify() {
+            let title = "News Weather Assitant";
+            let t = Date.now() + 120000;    //2 mins in future
+            let options = {
+                body: 'Hello from News Weather Assitant!',
+                icon: 'imagefile/notificationicon.jpg',
+                timestamp: t,
+                vibrate: [100, 200, 100]
+            }
+            let n = new Notification(title, options);
+
+            n.addEventListener('show', function (ev) {
+                console.log('SHOW', ev.currentTarget.data);
+            });
+            n.addEventListener('close', function (ev) {
+                console.log('CLOSE', ev.currentTarget.body);
+            });
+            setTimeout(n.close.bind(n), 5000); //close notification after 3 seconds
+        }
+        /*************
+        Note about actions param - used with webworkers/serviceworkers
+        actions: [
+           {action: 'mail', title: 'e-mail', icon: './img/envelope-closed-lg.png'},
+           {action: 'blastoff', title: 'Blastoff', icon: './img/rocket-lg.png'}]
+       *********************/
+    </script>
+</body>
+
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <hr>
+
+
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="http://localhost:8080/signup" class="btn btn-outline-success btn-rounded">Sign up!</a>
+        </li>
+    </ul>
+
+
+    <!-- <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Give Your Valuable feedback Here!</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="" class="btn btn-outline-danger btn-rounded">Feedback</a>
+        </li>
+    </ul> -->
+
+    <hr>
+    <div>
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a class="nav-link" href="">About Us</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="nav-link" href="">Contact Us</a>
+        </li>
+    </ul>
+
+
+
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="http://127.0.0.1:5501/NewsAppJs/index.html">NewsWeatherAssistant.com</a>
+    </div>
+
+
+</footer>
+
+</html>
